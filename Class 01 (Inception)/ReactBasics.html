@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suraj Learning React form NJ</title>
+  </head>
+  <body>
+    <div id="root">
+      <!--? <h1>Hello world</h1> // this is how we write in simple html, program in html  -->
+
+      <!-- so we want to print the below thing inside out root -->
+
+      <!-- <div id="contianer">
+        <h1>heading1</h1>
+        <h1>heading2</h1>
+      </div> -->
+    </div>
+
+    <!--? this is how we write h1 and and value in Js, like program in js -->
+
+    <!-- <script>
+      const heading = document.createElement("h1");
+      heading.innerHTML = " Hello Suraj";
+      const root = document.getElementById("root");
+      root.appendChild(heading);
+    </script> -->
+
+    <!--? so by adding below CDN link we have creat shortest React program, for that check your browsers dev tool, { react is a global object} react is nothing but just a peace of Javascript code  -->
+
+    <!--? so the below react script is "core react"  -->
+
+    <!-- <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script> -->
+
+    <!--? so the below react script is "web version of react "  -->
+
+    <!-- <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script> -->
+
+    <!-- ? this is the same program using react -->
+
+    <script>
+      // what is the react element at the end of the day? = it is an object
+
+      // so the below thing is not developer friendly that's why JSX came into picture
+
+      const heading = React.createElement("h1", {}, "Namaste React!");
+
+      // here if  we console this heading we get the object of this react element const
+
+      heading2 = React.createElement("h2", {}, "Namaste React!");
+
+      const container = React.createElement("div", { id: "container" }, [
+        heading,
+        heading2,
+      ]);
+
+      // if we have to paas multiple childeran we use array here
+
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+
+      // below is, passing the a react element inside the root "root.render(container)"";
+
+      // here basically i'm putting container inside my root
+
+      // if we do innerHTML here, yes it will change the heading !
+
+      // doesn't matter how big the applicaiton is we just have "one root element " and " one render method"
+
+      // the beauty of react is that we can use it for only one section in out website like we want to impliment react to our existing project and in searchbar so we just have to do is to write search bar in react
+    </script>
+  </body>
+</html>
